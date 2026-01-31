@@ -225,19 +225,23 @@ h2::after {
     border-bottom: 10px dashed var(--punk-red);
     border-top: 10px dashed var(--punk-red);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .game-cards {
     position: relative;
     max-width: 800px;
-    margin: 0 auto 40px;
+
     min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .game-card {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     background: var(--punk-gray);
     padding: 40px;
@@ -315,6 +319,12 @@ h2::after {
     border-bottom: 10px dashed var(--punk-red);
     border-top: 10px dashed var(--punk-red);
     text-align: center;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .music-info {
@@ -339,6 +349,7 @@ h2::after {
     margin-bottom: 30px;
     height: 300px;
     overflow-y: auto;
+    width: 70%;
     
 
 }
