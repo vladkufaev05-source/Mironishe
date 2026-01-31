@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIRON</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="human">
+        <div class="human-content">
+            <div class="human-photo">
+                <img src="photo_2026-01-31_07-30-09.jpg" alt="MIRON">
+            </div>
+            <div class="human-text">
+            <h1>МИРОН</h1>
+            <p>GYM | GAME | PUNK ROCK</p>
+        </div>
+        </div>
+        
+    </div>
+
+    <div class="gym-block">
+        <h2>GYMIRON</h2>
+        <div class="stats">
+            <div class="stat-card">
+                <span class="stat-number" id="workCount">0</span>
+                <br>
+                <span class="stat-label">ТРЕНИРОВКИ</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">3</span>
+                <br>
+                <span class="stat-label">ТРЕНИ В НЕДЕЛЮ</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">1.5</span>
+                <br>
+                <span class="stat-label">ЛЕТ ТРЕНИРОВОК</span>
+            </div>
+        </div>
+
+
+        <div class="progress">
+            <div class="progress-line">
+                <span>ПРОГРЕСС</span>
+                <span id="percent">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="gymProgress"></div>
+            </div>
+            <button class="but">+ ТРЕНИРОВКА</button>
+            <p class="progress-text" id="progressText">0 ТРЕНИРОВОК</p>
+        </div>
+    </div>
+
+    <div class="games-block">
+        <h2>GAMIRON</h2>
+        <div class="game-cards">
+            <div class="game-card active" data-index = '0'>
+                <h3>Counter Strike 2</h3>
+                <p>TACTICAL SHOOTER</p>
+                <div class="game-comment">ЛЮБИМАЯ ПУШКА: AK-47</div>
+            </div>
+            <div class="game-card" data-index = '1'>
+                <h3>WAR THUNDER</h3>
+                <p>ВОЕННЫЙ СИМУЛЯТОР</p>
+                <div class="game-comment">ЛЮБИМЫЙ КЛАСС: САМОЛЁТ</div>
+            </div>
+            <div class="game-card" data-index = '2'>
+                <h3>HEARTS OF IRON IV</h3>
+                <p>СТРАТЕГИЯ</p>
+                <div class="game-comment">ЛЮБИМАЯ СТРАНА: СССР</div>
+            </div>
+            <div class="game-card" data-index = '3'>
+                <h3>TERRARIA</h3>
+                <p>SANDBOX</p>
+                <div class="game-comment">НАИГРАЛ 252 ЧАСА</div>
+            </div>
+        </div>
+
+        <div class="game-slider">
+            <button class="slider-but" ><НАЗАД></button>
+            <button class="slider-but" ><ВПЕРЁД></button>
+        </div>
+    </div>
+
+    <div class="music-block">
+        <h2>MUSIRON</h2>
+        <div class="vinyl">
+            <div class="vinyl-plastin" id="plastin"></div>
+        </div>
+
+        <div class="music-info">
+            <h3 id="music-title">ВЫБЕРИ ТРЕК</h3>
+        </div>
+
+        <div class="tracks">
+            <div class="track-item active" data-src="Nirvana_-_Heart-Shaped_Box_allbestclub_allbestclub_(SkySound.cc).mp3" data-title="HEART-SHAPED BOX" data-artist="NIRVANA">
+                <span class="track-number">1</span>
+                <span class="track-name">HEART-SHAPED BOX</span>
+                <span class="track-artist">NIRVANA</span>
+            </div>
+            <div class="track-item" data-src="Linkin_Park_-_In_the_end_OST_(SkySound.cc).mp3" data-title="IN THE END" data-artist="LINKIN PARK">
+                <span class="track-number">2</span>
+                <span class="track-name">IN THE END</span>
+                <span class="track-artist">LINKIN PARK</span>
+            </div>
+            <div class="track-item" data-src="The_Offspring_-_You_are_gonna_go_far_kid_(SkySound.cc).mp3" data-title="YOU'RE GONNA GO FAR, KID" data-artist="THE OFFSPRING">
+                <span class="track-number">3</span>
+                <span class="track-name">YOU'RE GONNA GO FAR, KID</span>
+                <span class="track-artist">THE OFFSPRING</span>
+            </div>
+            <div class="track-item" data-src="Green_day_-_Holyday_(SkySound.cc).mp3" data-title="HOLYDAY" data-artist="GREEN DAY">
+                <span class="track-number">4</span>
+                <span class="track-name">HOLYDAY</span>
+                <span class="track-artist">GREEN DAY</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="control-but" >◅</button>
+            <button class="control-but play-btn" id="play-but" >►</button>
+            <button class="control-but" >▻</button>
+        </div>
+
+        <audio id="audio-controls"></audio>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
